@@ -1,0 +1,52 @@
+# 欢迎使用 Jekyll!
+#
+# 这个配置文件用于设置影响整个博客的设置，
+# 这些值通常只需要设置一次，之后很少需要编辑。如果发现自己经常编辑此文件，
+# 建议考虑使用 Jekyll 的数据文件功能来更新需要经常变动的数据。
+#
+# 由于技术原因，当使用 'bundle exec jekyll serve' 时，
+# 此文件的更改*不会*自动重新加载。如果更改了此文件，请重启服务器进程。
+#
+# 如果你需要 YAML 语法帮助，这里有一些快速参考：
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# 网站设置
+# 这些设置用于个性化你的新网站。如果你查看 HTML 文件，
+# 你会看到它们通过 {{ site.title }}, {{ site.email }} 等方式被访问。
+# 你可以创建任何自定义变量，它们都可以在模板中通过 {{ site.myvariable }} 访问。
+
+title: Your awesome title
+email: your-email@example.com
+description: >- # 这表示忽略换行符直到 "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # 你的网站子路径，例如 /blog
+url: "" # 你的网站主机名和协议，例如 http://example.com
+twitter_username: jekyllrb
+github_username: jekyll
+
+# 构建设置
+theme: minima
+plugins:
+  - jekyll-feed
+# 排除处理项
+# 以下项目默认不会被处理。
+# 在 `exclude:` 键下列出的任何项目都会自动添加到
+# 内部的"默认列表"中。
+#
+# 被排除的项目可以通过在 `include:` 列表中
+# 明确列出目录或其条目的文件路径来进行处理。
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
